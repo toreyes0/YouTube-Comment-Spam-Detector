@@ -1,0 +1,23 @@
+{
+    "artificialDelayMilliseconds": 1000,
+    "keepExistingTerminalsOpen": false,
+    "runOnStartup": true,
+    "terminals": [
+        {
+            "splitTerminals": [
+            {
+                "name": "Flask",
+                "commands": ["flask run"]
+            }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "Tailwind",
+                    "commands": ["npx tailwindcss -i app/static/css/styles.css -o app/static/css/main.css --minify --watch"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+__pycache__
+.env
+.flaskenv
+node_modules
+hyperparameter_tuning
+client_secret.json

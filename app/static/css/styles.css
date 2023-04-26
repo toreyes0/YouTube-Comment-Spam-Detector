@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.load-anim {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    margin-top: 20px;
+}
+.load-anim:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid white;
+    border-color: white transparent white transparent;
+    animation: loading 1.2s linear infinite;
+}
+@keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+table {
+    @apply w-full;
+}
+
+th {
+    @apply text-lg;
+}
+
+tr {
+    @apply leading-8;
+}
+
+tbody tr:nth-child(odd) {
+    @apply bg-slate-700;
+}
+
+tr:not(tbody tr:last-child) {
+    @apply border-b;
+}
+
+th, td {
+    @apply px-4;
+}
+
+tr td:first-child {
+    @apply w-1/4;
+    overflow-wrap: anywhere;
+}
+
+tr td:last-child {
+    @apply text-center;
+}
